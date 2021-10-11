@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="Formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="Principal mt-5">
+        <form id="Formulario_Agregar">
+            <section class="seccion_1">
+                <label>Nombre</label>
+                <div class="input-group mt-3">
+                    <span class="valid_nombre icon_nombre input-group-text" id="inputGroupPrepend2"><i class="bi bi-person-square"></i></span>
+                    <input name="nombre" type="text" class="valid_nombre form-control" id="Nombre" aria-describedby="inputGroupPrepend2" placeholder="Nombre">
+                </div>
+                <label class="label_mensaje" id="label_nombre"></label>
+            </section>
+            <section class="seccion_2">
+                <label>Apellido</label>
+                <div class="input-group mt-3">
+                    <span class="valid_apellido icon_apellido input-group-text" id="inputGroupPrepend2"><i class="bi bi-person-square"></i></span>
+                    <input name="apellido" type="text" class="valid_apellido form-control" id="Apellido" aria-describedby="inputGroupPrepend2" placeholder="Apellido">
+                </div>
+                <label id="label_apellido"></label>
+            </section>
+            <section class="seccion_3">
+                <label>Telefono</label>
+                <div class="input-group mt-3">
+                    <span class="valid_telefono icon_telefono input-group-text" id="inputGroupPrepend2"><i class="bi bi-phone"></i></span>
+                    <input name="telefono" type="text" class="valid_telefono form-control" id="Telefono" aria-describedby="inputGroupPrepend2" placeholder="Telefono">
+                </div>
+                <label class="label_mensaje" id="label_telefono"></label>
+            </section>
+            <section class="seccion_4">
+                <label>Email</label>
+                <div class="input-group mt-3">
+                    <span class="valid_email icon_email input-group-text" id="inputGroupPrepend2"><i class="bi bi-envelope"></i></span>
+                    <input name="email" type="text" class="valid_email form-control" id="Email" aria-describedby="inputGroupPrepend2" placeholder="Email">
+                </div>
+                <label class="label_mensaje" id="label_email"></label>
+            </section>
+            <div class="col-md-4 mt-2">
+                <label for="departamento_colombia" class="Colombia_D form-label mt-3 mb-3">Departamento</label>
+                <select id="departamento_colombia" name="departamento_colombia" class="Departamento form-select">
+                </select>
+                <label class="label_mensaje" id="departamento"></label>
+            </div>
+            <div class="col-md-4 mt-0">
+                <label for="ciudad_colombia" class="Colombia_C form-label mt-3 mb-3">Ciudad</label>
+                <select id="ciudad_colombia" name="ciudad_colombia" class="Ciudad form-select">
+                </select>
+                <label id="ciudad" for=""></label>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <input type="button" class="Nuevo_Cliente btn btn-primary" value="Agregar Cliente">
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="Formulario.js"></script>
+</body>
+</html>
